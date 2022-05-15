@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json file</title>
+</head>
+<body>
+    <form action="get">
+        <fieldset>
+            <legend>Form</legend>
+
+    <label for="username">Enter Your User-name:     </label>
+    <input type="text" id="username" placeholder="only alphabet " pattern="[A-Z a-z]{3,30}" title="user name" required > <br> <br>
+
+    <label for="email"> Enter Your Email : </label>    
+    <input type="Email" id="email" name="email" placeholder="xxx00@xxxx.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Email" required  > <br> <br>
+    
+    <label for="password">Enter Your Password:</label>
+    <input type="password" id="password" placeholder="Eight or more characters"  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$"  title="at least one uppercase,lowercase and symbol" required> <br> <br>
+    
+
+    <label for="phn-no">Enter Your Phone-Number</label>
+    <input type="text" id="phn-no" placeholder="(+88/8801/00880101" pattern="(^(\+8801|8801|01|008801))[3-9]{1}(\d){8}$" title="Bangladeshi Number" required><br> <br>
+    
+    
+    <label for="zipcode">Enter Your area Zip code:</label>
+    <input type="code" id="zipcode" title="12345 or 12345-1234" pattern="^\d{5}(?:[- ]?\d{4})?$" required
+    > <br><br>
+
+    <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    
+
+
+
+    <script src="./app.js"></script>
+    
+
+
+</body>
+</html>
